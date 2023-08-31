@@ -1,0 +1,7 @@
+<h1>User Information</h1>
+<p>ID: {{ user.id }}</p>
+<p>Name: {{ user.name }}</p>
+<p>Email: {{ user.email }}</p>
+<a href="{% url 'users:update_user' user.id %}">Edit</a>
+<a href="{% url 'users:delete_user' user.id %}">Delete</a>
+<a href="{% url 'users:user_list' %}">Back to User List</a>
